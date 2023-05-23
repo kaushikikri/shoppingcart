@@ -25,7 +25,7 @@ export const Header = () => {
 
                     <div className="flex md:order-2 md:flex-row flex-col items-center">
                         <Link to="/cart" className=" dark:text-white font-medium text-lg  mr-3 md:mr-0 ">Cart: {cartList.length}</Link>
-                        <button type="button" onClick={() => setHidden(!hidden)} data-collapse-toggle="navbar-sticky" className={`inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:${hidden ? "hidden" : " "} hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600`} aria-controls="navbar-sticky" aria-expanded="false">
+                        <button type="button" onClick={() => setHidden(!hidden)} data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
                             <span className="sr-only">Open main menu</span>
                             <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                         </button>
